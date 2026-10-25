@@ -11,7 +11,7 @@ import "./index.css";
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/p20">
       <Routes>
         <Route path="/" element={<Home />} />
 
