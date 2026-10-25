@@ -4,6 +4,10 @@ import userEvent from "@testing-library/user-event";
 import App from "./App";
 
 describe("Program 20 - Nested Blog Routes", () => {
+  beforeEach(() => {
+    window.history.pushState({}, "Home page", "/");
+  });
+
   test("displays the Home page", () => {
     render(<App />);
 
