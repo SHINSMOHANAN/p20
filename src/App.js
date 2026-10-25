@@ -10,8 +10,13 @@ import Post3 from "./pages/Post3";
 import "./index.css";
 
 function App() {
+  const basename =
+    process.env.NODE_ENV === "test"
+      ? "/"
+      : "/p20";
+
   return (
-    <BrowserRouter basename="/p20">
+    <BrowserRouter basename={basename}>
       <Routes>
         <Route path="/" element={<Home />} />
 
